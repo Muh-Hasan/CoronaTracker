@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.card {
+  margin: 0 3% !important;
+  border-radius: 30px !important;
+  box-shadow: 0 0 40px gainsboro !important;
+  transition: transform .2s;
+
+}
+.infected h2{
+  color: rgba(0, 0, 255, 0.5);
+}
+.recovered h2{
+  color:  rgba(0, 255, 0, 0.5);
+}
+.deaths h2{
+  color: rgba(255, 0, 0, 0.5);
+}
+
+.card :hover{
+  transform: scale(1.1);
+}
+
+
+@media only screen and (max-width: 770px) {
+  .card {
+    margin: 2% 0 !important;
+    box-shadow: 0 0 30px gainsboro !important;    
+  }
+}
